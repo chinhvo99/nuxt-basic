@@ -2,6 +2,16 @@
 
 > My splendiferous Nuxt.js project
 
+## Features
+- Well commented
+- Has Bootstrap theming example
+- Has VueX setup
+- Has mixins setup
+- Has i18n setup
+- Has simple example
+- Help you customize your bootstrap components cleaner
+- Nice folder oganizing
+
 ## Build Setup
 
 ```bash
