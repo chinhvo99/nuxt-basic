@@ -1,0 +1,37 @@
+// Just copy, find and replace all of these by your new variant's name and you'll have a new one
+// By this example, find and replace the 'purple' with your new variant's name
+.alert-purple {
+    color: $white;
+    background-color: $purple;
+    border-color: $purple-light;
+}
+.badge-purple {
+    color: $white;
+    background-color: $purple;
+}
+.btn-purple {
+    color: $white;
+    background-color: $purple;
+    border-color: $purple;
+}
+.btn-purple:hover {
+    color: $white;
+    background-color: $purple-dark;
+    border-color: $purple;
+}
+.btn-purple:not(:disabled):not(.disabled).active,
+.btn-purple:not(:disabled):not(.disabled):active,
+.show>.btn-purple.dropdown-toggle {
+    color: $white;
+    background-color: $purple-darker;
+    border-color: $purple-dark;
+}
+.bg-purple {
+    background-color: $purple;
+}
+.border-purple {
+    border-color: $purple;
+}
+.text-purple {
+    color: $purple;
+}

@@ -25,6 +25,12 @@ export default {
    */
   css: ['~/assets/scss/bootstrap-vue/custom.scss', '~/assets/scss/main.scss'],
   /*
+   ** Import scss resource in every component so we can use the global variant varibles
+   */
+  styleResources: {
+    scss: ['~/assets/scss/bootstrap-vue/variants/main.scss']
+  },
+  /*
    ** Plugins to load before mounting the App
    */
   plugins: [
@@ -67,7 +73,8 @@ export default {
           }
         ]
       }
-    ]
+    ],
+    '@nuxtjs/style-resources'
   ],
   /*
    ** Axios module configuration
