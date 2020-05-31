@@ -1,7 +1,8 @@
 <template>
-  <b-navbar toggleable="lg" type="dark" variant="info">
+  <!-- Checkout the variants customization bootstrap-vue/variants folder -->
+  <b-navbar toggleable="lg" type="dark" variant="purple">
     <b-navbar-brand>
-      <nuxt-link to="/" class="text-light" style="text-decoration: none">
+      <nuxt-link to="/" style="text-decoration: none">
         {{ $t('home.navbar') }}
       </nuxt-link>
     </b-navbar-brand>
@@ -24,16 +25,16 @@
           variant="danger"
           @click="$i18n.locale = 'vi'"
         >
-          {{ $t('home.lang') }}
+          <fa class="text-warning" :icon="['fas', 'globe-asia']" />
         </b-button>
         <b-button
           v-if="$i18n.locale == 'vi'"
           size="sm"
           style="border-radius: 2rem"
-          variant="danger"
+          variant="primary"
           @click="$i18n.locale = 'en'"
         >
-          {{ $t('home.lang') }}
+          <fa :icon="['fas', 'globe-asia']" />
         </b-button>
       </b-navbar-nav>
     </b-collapse>

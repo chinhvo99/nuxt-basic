@@ -1,9 +1,11 @@
 <template>
   <b-container fluid>
     <ExampleComponent />
+    <p class="random-class">
+      {{ $t('random-text') }}
+    </p>
   </b-container>
 </template>
-
 <script>
 export default {
   name: 'Home',
@@ -24,3 +26,8 @@ export default {
   }
 }
 </script>
+<style lang="scss">
+.random-class {
+  color: $purple;
+}
+</style>

@@ -7,5 +7,6 @@
     "header": "Đây là một header",
     "sidebar": "Đây là một sidebar",
     "footer": "Mẫu website này được làm bởi thecodeorigin.com"
-  }
+  },
+  "random-text": "Đoạn text này dùng biến scss toàn cục trong component riêng"
 }

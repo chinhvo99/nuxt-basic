@@ -14,7 +14,12 @@ $black: #000 !default;
 // Base colors definitions
 $blue: #007bff !default;
 $indigo: #6610f2 !default;
+// When creating a variant, it's recommended to create some lighter and darker versions of it
 $purple: #6f42c1 !default;
+$purple-light: #a980f5 !default;
+$purple-dark: #572ea1 !default;
+$purple-darker: #4c187c !default;
+// Above, there're 4 level of the purple variant
 $pink: #e83e8c !default;
 $red: #dc3545 !default;
 $orange: #fd7e14 !default;
@@ -44,7 +49,8 @@ $theme-colors: map-merge(
     'warning': $warning,
     'danger': $danger,
     'light': $light,
-    'dark': $dark
+    'dark': $dark,
+    'purple': $purple
   ),
   $theme-colors
 );
