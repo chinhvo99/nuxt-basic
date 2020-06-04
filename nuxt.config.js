@@ -102,5 +102,34 @@ export default {
         })
       }
     }
+  },
+  /*
+  This is not required!
+  This will make the static files use ./_nuxt instead of /_nuxt for src
+  Which will help avoid 404 error sometime
+  Because / is from the root folder of the whole computer
+  While ./ will access the same level of directory and stuf :D
+  */
+  // router: {
+  //   base: '.'
+  // },
+  generate: {
+    /*
+     ** Declare specific routes for static generator
+     */
+    // routes: [
+    //   '/'
+    // ]
+    /*
+     ** Or dynamic routes
+     */
+    // routes () {
+    //   return axios.get('https://my-api/users')
+    //     .then((res) => {
+    //       return res.data.map((user) => {
+    //         return '/users/' + user.id
+    //       })
+    //     })
+    // }
   }
 }

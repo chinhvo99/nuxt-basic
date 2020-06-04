@@ -2,7 +2,7 @@
   <b-container fluid>
     <ExampleComponent />
     <p class="random-class">
-      {{ $t('random-text') }}
+      {{ $t('random-text') | slugify }}
     </p>
   </b-container>
 </template>
