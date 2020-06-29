@@ -104,7 +104,7 @@ export default {
     }
   },
   /*
-  This is not required!
+  roter.base is not required!
   This will make the static files use ./_nuxt instead of /_nuxt for src
   Which will help avoid 404 error sometime
   Because / is from the root folder of the whole computer

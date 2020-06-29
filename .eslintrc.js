@@ -11,7 +11,7 @@ module.exports = {
     'eslint:recommended',
     // https://github.com/vuejs/eslint-plugin-vue#priority-a-essential-error-prevention
     // consider switching to `plugin:vue/strongly-recommended` or `plugin:vue/recommended` for stricter rules.
-    'plugin:vue/recommended',
+    'plugin:vue/strongly-recommended',
     'plugin:prettier/recommended'
   ],
   // required to lint *.vue files
@@ -23,6 +23,8 @@ module.exports = {
     'semi': [2, 'never'],
     'no-console': 'off',
     'vue/max-attributes-per-line': 'off',
+    'vue/html-self-closing': 'off',
+    'vue/no-v-html': 'off',
     'prettier/prettier': ['error', { 'semi': false }]
   }
 }
