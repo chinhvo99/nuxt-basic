@@ -2,8 +2,7 @@ import Vue from 'vue'
 Vue.mixin({
   data() {
     return {
-      baseUrl: 'http://localhost:3000',
-      apiUrl: 'http://localhost:8000'
+      mixinMessage: 'Hello from mixin'
     }
   },
   methods: {

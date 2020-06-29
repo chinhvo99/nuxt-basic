@@ -1,5 +1,6 @@
 // VueX-State
 export default () => ({
   locales: ['en', 'vi'],
-  locale: 'en'
+  locale: 'en',
+  message: 'Hello from state'
 })

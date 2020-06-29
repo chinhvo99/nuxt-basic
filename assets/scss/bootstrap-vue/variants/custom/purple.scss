@@ -19,6 +19,16 @@
     background-color: $purple-dark;
     border-color: $purple;
 }
+.btn-outline-purple {
+    color: $purple;
+    background-color: none;
+    border: $border-width solid $purple
+}
+.btn-outline-purple:hover {
+    color: $white;
+    background-color: $purple;
+    border: $border-width solid $purple
+}
 .btn-purple:not(:disabled):not(.disabled).active,
 .btn-purple:not(:disabled):not(.disabled):active,
 .show>.btn-purple.dropdown-toggle {
@@ -34,4 +44,21 @@
 }
 .text-purple {
     color: $purple;
+}
+.b-toast-purple {
+    .toast {
+        border: none;
+        .toast-header {
+            background-color: $purple;
+            color: $white;
+            .close {
+                color: $white;
+                opacity: 1;
+            }
+        }
+        .toast-body {
+            background-color: $purple;
+            color: $white;
+        }
+    }
 }

@@ -110,9 +110,10 @@ export default {
   Because / is from the root folder of the whole computer
   While ./ will access the same level of directory and stuf :D
   */
-  // router: {
-  //   base: '.'
-  // },
+  router: {
+    // base: '.'
+    middleware: 'MiddlewareExample'
+  },
   generate: {
     /*
      ** Declare specific routes for static generator

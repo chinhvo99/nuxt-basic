@@ -8,5 +8,6 @@
     "sidebar": "Đây là một sidebar",
     "footer": "Mẫu website này được làm bởi thecodeorigin.com"
   },
-  "random-text": "Đoạn text này dùng biến scss toàn cục trong component riêng"
+  "random-text": "Đoạn text này dùng biến scss toàn cục trong component riêng",
+  "random-text-2": "Nội dung trang giới thiệu"
 }

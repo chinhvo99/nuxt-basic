@@ -8,5 +8,6 @@
     "sidebar": "This is a sidebar",
     "footer": "This starter template is made by thecodeorigin.com"
   },
-  "random-text": "This text use global scss variable in the component"
+  "random-text": "This text use global scss variable in the component",
+  "random-text-2": "Introduction page content"
 }
