@@ -23,12 +23,19 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['~/assets/scss/bootstrap-vue/custom.scss', '~/assets/scss/main.scss'],
+  css: [
+    '~/assets/scss/others/gradient.scss',
+    '~/assets/scss/bootstrap-vue/custom.scss',
+    '~/assets/scss/main.scss'
+  ],
   /*
    ** Import scss resource in every component so we can use the global variant varibles
    */
   styleResources: {
-    scss: ['~/assets/scss/bootstrap-vue/variants/main.scss']
+    scss: [
+      '~/assets/scss/bootstrap-vue/variants/main.scss',
+      '~/assets/scss/others/gradient.scss'
+    ]
   },
   /*
    ** Plugins to load before mounting the App

@@ -11,6 +11,9 @@ export default {
   components: {
     Navbar: () => import('~/components/common/Layout/Navbar.vue'),
     Footer: () => import('~/components/common/Layout/Footer.vue')
+  },
+  mounted() {
+    this.$i18n.locale = localStorage.getItem('locale')
   }
 }
 </script>

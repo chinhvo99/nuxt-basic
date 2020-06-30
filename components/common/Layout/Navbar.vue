@@ -19,20 +19,20 @@
       <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto">
         <b-button
-          v-if="$i18n.locale == 'en'"
+          v-if="locale == 'en'"
           size="sm"
           style="border-radius: 2rem"
           variant="danger"
-          @click="$i18n.locale = 'vi'"
+          @click="changeLanguage('vi')"
         >
           <fa class="text-warning" :icon="['fas', 'globe-asia']" />
         </b-button>
         <b-button
-          v-if="$i18n.locale == 'vi'"
+          v-if="locale == 'vi'"
           size="sm"
           style="border-radius: 2rem"
           variant="primary"
-          @click="$i18n.locale = 'en'"
+          @click="changeLanguage('en')"
         >
           <fa :icon="['fas', 'globe-asia']" />
         </b-button>
@@ -42,7 +42,22 @@
 </template>
 
 <script>
+import { mapMutations, mapState } from 'vuex'
 export default {
-  name: 'Navbar'
+  name: 'Navbar',
+  computed: {
+    ...mapState({
+      locale: (state) => state.locale
+    })
+  },
+  methods: {
+    ...mapMutations({
+      SET_LANG: 'SET_LANG'
+    }),
+    changeLanguage(locale) {
+      this.SET_LANG(locale) // store in state and localStorage
+      this.$i18n.locale = locale // live change on website
+    }
+  }
 }
 </script>
