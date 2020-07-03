@@ -24,8 +24,8 @@ export default {
    ** Global CSS
    */
   css: [
-    '~/assets/scss/others/gradient.scss',
-    '~/assets/scss/bootstrap-vue/custom.scss',
+    '~/assets/scss/others/all.scss',
+    '~/assets/scss/bootstrap-vue/all.scss',
     '~/assets/scss/main.scss'
   ],
   /*
@@ -34,7 +34,7 @@ export default {
   styleResources: {
     scss: [
       '~/assets/scss/bootstrap-vue/variants/main.scss',
-      '~/assets/scss/others/gradient.scss'
+      '~/assets/scss/others/all.scss'
     ]
   },
   /*

@@ -4,6 +4,11 @@
     <p class="random-class">
       {{ $t('random-text') | slugify }}
     </p>
+    <p class="mt-5">
+      {{ $t('random-text-using-grid') }}
+      <span class="sx-10"></span>
+      {{ $t('random-text-using-spacing') }}
+    </p>
   </b-container>
 </template>
 <script>

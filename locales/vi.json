@@ -9,5 +9,7 @@
     "footer": "Mẫu website này được làm bởi thecodeorigin.com"
   },
   "random-text": "Đoạn text này dùng biến scss toàn cục trong component riêng",
-  "random-text-2": "Nội dung trang giới thiệu"
+  "random-text-2": "Nội dung trang giới thiệu",
+  "random-text-using-grid": "Đoạn văn bản này sử dụng mt-5 (custom scss grid)",
+  "random-text-using-spacing": "Đoạn văn bản này sử dụng sx-10 (custom scss spacing)"
 }
