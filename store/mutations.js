@@ -5,5 +5,8 @@ export default {
       state.locale = locale
       localStorage.setItem('locale', locale)
     }
+  },
+  SET_AUTH(state, auth) {
+    state.auth = auth
   }
 }

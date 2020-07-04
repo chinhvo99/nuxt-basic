@@ -1,4 +1,14 @@
 {
+  "navbar": {
+    "login": "Đăng nhập",
+    "logout": "Đăng xuất"
+  },
+  "login": {
+    "title": "Đăng nhập để thấy trang có xác thực bảo vệ",
+    "email": "Nhập email của bạn vào...",
+    "password": "Nhập mật khẩu của bạn vào...",
+    "button": "Đăng nhập"
+  },
   "home": {
     "title": "Chào mừng",
     "lang": "Việt",
@@ -8,6 +18,7 @@
     "sidebar": "Đây là một sidebar",
     "footer": "Mẫu website này được làm bởi thecodeorigin.com"
   },
+  "secret-text": "Trang này yêu cầu đăng nhập mới thấy được",
   "random-text": "Đoạn text này dùng biến scss toàn cục trong component riêng",
   "random-text-2": "Nội dung trang giới thiệu",
   "random-text-using-grid": "Đoạn văn bản này sử dụng mt-5 (custom scss grid)",

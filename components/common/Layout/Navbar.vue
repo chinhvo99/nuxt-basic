@@ -14,10 +14,39 @@
         <nuxt-link to="/introduction" class="text-light">
           Introduction
         </nuxt-link>
+        <nuxt-link to="/secret" class="text-light ml-3">
+          Secret page
+        </nuxt-link>
       </b-navbar-nav>
 
       <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto">
+        <!-- Login button -->
+        <b-button
+          v-if="$store.state.auth && $route.path != '/login'"
+          size="sm"
+          class="mr-3"
+          style="border-radius: 2rem"
+          variant="danger"
+          @click="$store.dispatch('logout')"
+          :title="$t('navbar.logout')"
+        >
+          <fa class="text-light" :icon="['fas', 'sign-in-alt']" />
+        </b-button>
+        <b-button
+          v-if="!$store.state.auth && $route.path != '/login'"
+          size="sm"
+          class="mr-3"
+          style="border-radius: 2rem"
+          variant="success"
+          @click="
+            $root.$emit('bv::show::modal', 'sign-in-modal', '#focusThisOnClose')
+          "
+          :title="$t('navbar.login')"
+        >
+          <fa class="text-light" :icon="['fas', 'sign-in-alt']" />
+        </b-button>
+        <!-- i18n button -->
         <b-button
           v-if="locale == 'en'"
           size="sm"

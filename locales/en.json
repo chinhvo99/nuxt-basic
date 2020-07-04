@@ -1,4 +1,14 @@
 {
+  "navbar": {
+    "login": "Login",
+    "logout": "Logout"
+  },
+  "login": {
+    "title": "Log in to see secret page",
+    "email": "Your email...",
+    "password": "Your password...",
+    "button": "Log in"
+  },
   "home": {
     "title": "Welcome",
     "lang": "Eng",
@@ -8,6 +18,7 @@
     "sidebar": "This is a sidebar",
     "footer": "This starter template is made by thecodeorigin.com"
   },
+  "secret-text": "This page requires authentication",
   "random-text": "This text use global scss variable in the component",
   "random-text-2": "Introduction page content",
   "random-text-using-grid": "This text's using mt-5 (custom scss grid)",
