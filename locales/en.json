@@ -11,5 +11,6 @@
   "random-text": "This text use global scss variable in the component",
   "random-text-2": "Introduction page content",
   "random-text-using-grid": "This text's using mt-5 (custom scss grid)",
-  "random-text-using-spacing": "This text's using sx-10 (custom scss spacing)"
+  "random-text-using-spacing": "This text's using sx-10 (custom scss spacing)",
+  "random-text-using-mixin": "This text's using centerAbsolute('both') (custom scss mixin)"
 }
