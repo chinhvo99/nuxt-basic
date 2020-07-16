@@ -15,11 +15,11 @@
   </b-container>
 </template>
 <script>
+import { ExampleComponent } from '~/components/specifics/Home'
 export default {
   name: 'Home',
   components: {
-    ExampleComponent: () =>
-      import('~/components/specifics/Home/ExampleComponent.vue')
+    ExampleComponent
   },
   created() {
     // Global function and variable from mixins

@@ -9,11 +9,12 @@
 
 <script>
 import { mapMutations } from 'vuex'
+import { Login, Navbar, Footer } from '~/components/common'
 export default {
   components: {
-    Login: () => import('~/components/common/Auth/Login.vue'),
-    Navbar: () => import('~/components/common/Layout/Navbar.vue'),
-    Footer: () => import('~/components/common/Layout/Footer.vue')
+    Login,
+    Navbar,
+    Footer
   },
   methods: {
     ...mapMutations({
