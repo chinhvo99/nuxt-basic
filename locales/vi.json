@@ -1,4 +1,8 @@
 {
+  "validate": {
+    "email": "Sai định dạng email!",
+    "required": "Trường này là bắt buộc!"
+  },
   "navbar": {
     "login": "Đăng nhập",
     "logout": "Đăng xuất"

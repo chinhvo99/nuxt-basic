@@ -15,20 +15,21 @@ export default {
     }
     commit('SET_AUTH', auth)
   },
-  async login({ commit }) {
-    setTimeout(() => {
+  async login({ commit }, form) {
+    console.log(form)
+    const auth = {
+      currentUser: {
+        name: 'Someone'
+      },
+      accessToken: 'yourAccessTokenFromBackend'
+    }
+    await setTimeout(() => {
       // We simulate the async request with timeout.
       // Replace the whole thing with a nice axios request to obtain the auth instance as usual
       // This use a constain as an example
-      const auth = {
-        currentUser: {
-          name: 'Someone'
-        },
-        accessToken: 'yourAccessTokenFromBackend'
-      }
-      Cookie.set('auth', auth, { expires: 365 }) // Saving token in cookie for server rendering
-      commit('SET_AUTH', auth) // Mutating to store for client rendering
     }, 1000)
+    Cookie.set('auth', auth, { expires: 365 }) // Saving token in cookie for server rendering
+    commit('SET_AUTH', auth) // Mutating to store for client rendering
   },
   async logout({ commit }) {
     await Cookie.remove('auth')

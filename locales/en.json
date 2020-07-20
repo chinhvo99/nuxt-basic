@@ -1,4 +1,8 @@
 {
+  "validate": {
+    "email": "Wrong email format!",
+    "required": "This field is required!"
+  },
   "navbar": {
     "login": "Login",
     "logout": "Logout"
